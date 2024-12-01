@@ -9,5 +9,13 @@ cmd 2*
 ensure in app folder ".../app"
 2(a): npm start
 
-ps. (cmd)'node server.js' print 'server is running' in the console
-ps. (".../page/login")THERE US NO LOGIN information, it will auto authorize. Done for this purpose only
+
+ps. server:
+(cmd)'node server.js' print 'server is running' in the console
+server.js is made to run on localhost:8080, can be change in 
+
+
+ps. App:
+(".../page/login")THERE US NO LOGIN information, it will auto authorize. Done for this purpose only
+To loss access privilege, refresh the page, Should always return you to page you were on
+To attempt to access other page, change link to what ever after "localhost:3000/(Page name, real or not cause broken link page will handle the missing page)"

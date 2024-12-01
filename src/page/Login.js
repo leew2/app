@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-async function loginUser(auth) {
+async function logUser(auth) {
  return fetch('http://localhost:8080/login', {
    method: 'POST',
    headers: {
@@ -16,7 +16,7 @@ export default function Login({ setToken }) {
   const [password, setPassword] = useState();
   const handleSubmit = async e => {
     e.preventDefault();
-    const token = await loginUser({
+    const token = await logUser({
       username,
       password
     });

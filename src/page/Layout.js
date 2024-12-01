@@ -8,7 +8,7 @@ const Layout = () => {
         <ul>
             <Link className="link" to="/">Home</Link>
             <Link className="link" to="/About">View About</Link>
-            <Link className="link" to="/contact">View Missing page</Link>
+            <Link className="link" to="/NoPage">View Missing page</Link>
           
         </ul>
       </nav>
