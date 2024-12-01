@@ -1,0 +1,13 @@
+1: Lunch "server.js" in one cmd to create / imitate server token intaction
+2: lunch "app" application, you'll be redirect to login page if there is no auth / OIDC
+
+cmd
+ensure in app folder: ".../app"
+1(a): node server.js
+
+cmd 2*
+ensure in app folder ".../app"
+2(a): npm start
+
+ps. (cmd)'node server.js' print 'server is running' in the console
+ps. (".../page/login")THERE US NO LOGIN information, it will auto authorize. Done for this purpose only
