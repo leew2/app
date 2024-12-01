@@ -12,8 +12,8 @@ async function logUser(auth) {
    .then(data => data.json())
 }
 export default function Login({ setToken }) {
-  const [username, setUserName] = useState();
-  const [password, setPassword] = useState();
+  const [username, setUser] = useState();
+  const [password, setPass] = useState();
   const handleSubmit = async e => {
     e.preventDefault();
     const token = await logUser({
@@ -28,11 +28,11 @@ export default function Login({ setToken }) {
       <form onSubmit={handleSubmit}>
         <label>
           <p>Username</p>
-          <input type="text" onChange={e => setUserName(e.target.value)} />
+          <input type="text" onChange={e => setUser(e.target.value)} />
         </label>
         <label>
           <p>Password</p>
-          <input type="password" onChange={e => setPassword(e.target.value)} />
+          <input type="password" onChange={e => setPass(e.target.value)} />
         </label>
         <div>
           <button type="submit">Submit</button>
